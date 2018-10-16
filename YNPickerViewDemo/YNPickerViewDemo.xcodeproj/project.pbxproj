@@ -16,8 +16,8 @@
 		B465E820217593F400C4B217 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E81F217593F400C4B217 /* main.m */; };
 		B465E82A217593F400C4B217 /* YNPickerViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E829217593F400C4B217 /* YNPickerViewDemoTests.m */; };
 		B465E835217593F400C4B217 /* YNPickerViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E834217593F400C4B217 /* YNPickerViewDemoUITests.m */; };
-		B465E8442175942C00C4B217 /* YNBottomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E8422175942C00C4B217 /* YNBottomPickerView.m */; };
 		B465E8472175BB3C00C4B217 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E8462175BB3C00C4B217 /* NextViewController.m */; };
+		B465E84A2176054600C4B217 /* YNBottomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E8482176054600C4B217 /* YNBottomPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		B465E830217593F400C4B217 /* YNPickerViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNPickerViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B465E834217593F400C4B217 /* YNPickerViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNPickerViewDemoUITests.m; sourceTree = "<group>"; };
 		B465E836217593F400C4B217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B465E8422175942C00C4B217 /* YNBottomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNBottomPickerView.m; sourceTree = "<group>"; };
-		B465E8432175942C00C4B217 /* YNBottomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNBottomPickerView.h; sourceTree = "<group>"; };
 		B465E8452175BB3C00C4B217 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		B465E8462175BB3C00C4B217 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		B465E8482176054600C4B217 /* YNBottomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YNBottomPickerView.m; path = ../../YNPickerView/YNBottomPickerView.m; sourceTree = "<group>"; };
+		B465E8492176054600C4B217 /* YNBottomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YNBottomPickerView.h; path = ../../YNPickerView/YNBottomPickerView.h; sourceTree = "<group>"; };
 		F22B4DD2C3FE4E031DECFC1B /* Pods-YNPickerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNPickerViewDemo.release.xcconfig"; path = "Target Support Files/Pods-YNPickerViewDemo/Pods-YNPickerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,8 +131,8 @@
 		B465E80F217593F300C4B217 /* YNPickerViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B465E8432175942C00C4B217 /* YNBottomPickerView.h */,
-				B465E8422175942C00C4B217 /* YNBottomPickerView.m */,
+				B465E8492176054600C4B217 /* YNBottomPickerView.h */,
+				B465E8482176054600C4B217 /* YNBottomPickerView.m */,
 				B465E810217593F300C4B217 /* AppDelegate.h */,
 				B465E811217593F300C4B217 /* AppDelegate.m */,
 				B465E813217593F300C4B217 /* ViewController.h */,
@@ -323,8 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B465E8472175BB3C00C4B217 /* NextViewController.m in Sources */,
+				B465E84A2176054600C4B217 /* YNBottomPickerView.m in Sources */,
 				B465E815217593F300C4B217 /* ViewController.m in Sources */,
-				B465E8442175942C00C4B217 /* YNBottomPickerView.m in Sources */,
 				B465E820217593F400C4B217 /* main.m in Sources */,
 				B465E812217593F300C4B217 /* AppDelegate.m in Sources */,
 			);
