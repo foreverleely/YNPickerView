@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57C6D8F24CC910E292AB5DDE /* libPods-YNPickerViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 948DE97D77ECF3D956D518B3 /* libPods-YNPickerViewDemo.a */; };
+		B465E812217593F300C4B217 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E811217593F300C4B217 /* AppDelegate.m */; };
+		B465E815217593F300C4B217 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E814217593F300C4B217 /* ViewController.m */; };
+		B465E818217593F300C4B217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B465E816217593F300C4B217 /* Main.storyboard */; };
+		B465E81A217593F400C4B217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B465E819217593F400C4B217 /* Assets.xcassets */; };
+		B465E81D217593F400C4B217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B465E81B217593F400C4B217 /* LaunchScreen.storyboard */; };
+		B465E820217593F400C4B217 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E81F217593F400C4B217 /* main.m */; };
+		B465E82A217593F400C4B217 /* YNPickerViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E829217593F400C4B217 /* YNPickerViewDemoTests.m */; };
+		B465E835217593F400C4B217 /* YNPickerViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E834217593F400C4B217 /* YNPickerViewDemoUITests.m */; };
+		B465E8442175942C00C4B217 /* YNBottomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E8422175942C00C4B217 /* YNBottomPickerView.m */; };
+		B465E8472175BB3C00C4B217 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B465E8462175BB3C00C4B217 /* NextViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B465E826217593F400C4B217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B465E805217593F300C4B217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B465E80C217593F300C4B217;
+			remoteInfo = YNPickerViewDemo;
+		};
+		B465E831217593F400C4B217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B465E805217593F300C4B217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B465E80C217593F300C4B217;
+			remoteInfo = YNPickerViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B7862DFA46FEC400C5A181C /* Pods-YNPickerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNPickerViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-YNPickerViewDemo/Pods-YNPickerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		948DE97D77ECF3D956D518B3 /* libPods-YNPickerViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YNPickerViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B465E80D217593F300C4B217 /* YNPickerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNPickerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B465E810217593F300C4B217 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B465E811217593F300C4B217 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B465E813217593F300C4B217 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B465E814217593F300C4B217 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B465E817217593F300C4B217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B465E819217593F400C4B217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B465E81C217593F400C4B217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B465E81E217593F400C4B217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B465E81F217593F400C4B217 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B465E825217593F400C4B217 /* YNPickerViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNPickerViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B465E829217593F400C4B217 /* YNPickerViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNPickerViewDemoTests.m; sourceTree = "<group>"; };
+		B465E82B217593F400C4B217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B465E830217593F400C4B217 /* YNPickerViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNPickerViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B465E834217593F400C4B217 /* YNPickerViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNPickerViewDemoUITests.m; sourceTree = "<group>"; };
+		B465E836217593F400C4B217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B465E8422175942C00C4B217 /* YNBottomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNBottomPickerView.m; sourceTree = "<group>"; };
+		B465E8432175942C00C4B217 /* YNBottomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNBottomPickerView.h; sourceTree = "<group>"; };
+		B465E8452175BB3C00C4B217 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		B465E8462175BB3C00C4B217 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		F22B4DD2C3FE4E031DECFC1B /* Pods-YNPickerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNPickerViewDemo.release.xcconfig"; path = "Target Support Files/Pods-YNPickerViewDemo/Pods-YNPickerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B465E80A217593F300C4B217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C6D8F24CC910E292AB5DDE /* libPods-YNPickerViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B465E822217593F400C4B217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B465E82D217593F400C4B217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0933DD84D585120D089287 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B7862DFA46FEC400C5A181C /* Pods-YNPickerViewDemo.debug.xcconfig */,
+				F22B4DD2C3FE4E031DECFC1B /* Pods-YNPickerViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C4F8D0128F7B8CBB4C4E3D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				948DE97D77ECF3D956D518B3 /* libPods-YNPickerViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B465E804217593F300C4B217 = {
+			isa = PBXGroup;
+			children = (
+				B465E80F217593F300C4B217 /* YNPickerViewDemo */,
+				B465E828217593F400C4B217 /* YNPickerViewDemoTests */,
+				B465E833217593F400C4B217 /* YNPickerViewDemoUITests */,
+				B465E80E217593F300C4B217 /* Products */,
+				4D0933DD84D585120D089287 /* Pods */,
+				7C4F8D0128F7B8CBB4C4E3D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B465E80E217593F300C4B217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B465E80D217593F300C4B217 /* YNPickerViewDemo.app */,
+				B465E825217593F400C4B217 /* YNPickerViewDemoTests.xctest */,
+				B465E830217593F400C4B217 /* YNPickerViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B465E80F217593F300C4B217 /* YNPickerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B465E8432175942C00C4B217 /* YNBottomPickerView.h */,
+				B465E8422175942C00C4B217 /* YNBottomPickerView.m */,
+				B465E810217593F300C4B217 /* AppDelegate.h */,
+				B465E811217593F300C4B217 /* AppDelegate.m */,
+				B465E813217593F300C4B217 /* ViewController.h */,
+				B465E814217593F300C4B217 /* ViewController.m */,
+				B465E8452175BB3C00C4B217 /* NextViewController.h */,
+				B465E8462175BB3C00C4B217 /* NextViewController.m */,
+				B465E816217593F300C4B217 /* Main.storyboard */,
+				B465E819217593F400C4B217 /* Assets.xcassets */,
+				B465E81B217593F400C4B217 /* LaunchScreen.storyboard */,
+				B465E81E217593F400C4B217 /* Info.plist */,
+				B465E81F217593F400C4B217 /* main.m */,
+			);
+			path = YNPickerViewDemo;
+			sourceTree = "<group>";
+		};
+		B465E828217593F400C4B217 /* YNPickerViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B465E829217593F400C4B217 /* YNPickerViewDemoTests.m */,
+				B465E82B217593F400C4B217 /* Info.plist */,
+			);
+			path = YNPickerViewDemoTests;
+			sourceTree = "<group>";
+		};
+		B465E833217593F400C4B217 /* YNPickerViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B465E834217593F400C4B217 /* YNPickerViewDemoUITests.m */,
+				B465E836217593F400C4B217 /* Info.plist */,
+			);
+			path = YNPickerViewDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B465E80C217593F300C4B217 /* YNPickerViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B465E839217593F400C4B217 /* Build configuration list for PBXNativeTarget "YNPickerViewDemo" */;
+			buildPhases = (
+				52121CA5CDF9FEB3831E3116 /* [CP] Check Pods Manifest.lock */,
+				B465E809217593F300C4B217 /* Sources */,
+				B465E80A217593F300C4B217 /* Frameworks */,
+				B465E80B217593F300C4B217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YNPickerViewDemo;
+			productName = YNPickerViewDemo;
+			productReference = B465E80D217593F300C4B217 /* YNPickerViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B465E824217593F400C4B217 /* YNPickerViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B465E83C217593F400C4B217 /* Build configuration list for PBXNativeTarget "YNPickerViewDemoTests" */;
+			buildPhases = (
+				B465E821217593F400C4B217 /* Sources */,
+				B465E822217593F400C4B217 /* Frameworks */,
+				B465E823217593F400C4B217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B465E827217593F400C4B217 /* PBXTargetDependency */,
+			);
+			name = YNPickerViewDemoTests;
+			productName = YNPickerViewDemoTests;
+			productReference = B465E825217593F400C4B217 /* YNPickerViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B465E82F217593F400C4B217 /* YNPickerViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B465E83F217593F400C4B217 /* Build configuration list for PBXNativeTarget "YNPickerViewDemoUITests" */;
+			buildPhases = (
+				B465E82C217593F400C4B217 /* Sources */,
+				B465E82D217593F400C4B217 /* Frameworks */,
+				B465E82E217593F400C4B217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B465E832217593F400C4B217 /* PBXTargetDependency */,
+			);
+			name = YNPickerViewDemoUITests;
+			productName = YNPickerViewDemoUITests;
+			productReference = B465E830217593F400C4B217 /* YNPickerViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B465E805217593F300C4B217 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = liyang;
+				TargetAttributes = {
+					B465E80C217593F300C4B217 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					B465E824217593F400C4B217 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B465E80C217593F300C4B217;
+					};
+					B465E82F217593F400C4B217 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B465E80C217593F300C4B217;
+					};
+				};
+			};
+			buildConfigurationList = B465E808217593F300C4B217 /* Build configuration list for PBXProject "YNPickerViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B465E804217593F300C4B217;
+			productRefGroup = B465E80E217593F300C4B217 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B465E80C217593F300C4B217 /* YNPickerViewDemo */,
+				B465E824217593F400C4B217 /* YNPickerViewDemoTests */,
+				B465E82F217593F400C4B217 /* YNPickerViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B465E80B217593F300C4B217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B465E81D217593F400C4B217 /* LaunchScreen.storyboard in Resources */,
+				B465E81A217593F400C4B217 /* Assets.xcassets in Resources */,
+				B465E818217593F300C4B217 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B465E823217593F400C4B217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B465E82E217593F400C4B217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52121CA5CDF9FEB3831E3116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YNPickerViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B465E809217593F300C4B217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B465E8472175BB3C00C4B217 /* NextViewController.m in Sources */,
+				B465E815217593F300C4B217 /* ViewController.m in Sources */,
+				B465E8442175942C00C4B217 /* YNBottomPickerView.m in Sources */,
+				B465E820217593F400C4B217 /* main.m in Sources */,
+				B465E812217593F300C4B217 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B465E821217593F400C4B217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B465E82A217593F400C4B217 /* YNPickerViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B465E82C217593F400C4B217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B465E835217593F400C4B217 /* YNPickerViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B465E827217593F400C4B217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B465E80C217593F300C4B217 /* YNPickerViewDemo */;
+			targetProxy = B465E826217593F400C4B217 /* PBXContainerItemProxy */;
+		};
+		B465E832217593F400C4B217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B465E80C217593F300C4B217 /* YNPickerViewDemo */;
+			targetProxy = B465E831217593F400C4B217 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B465E816217593F300C4B217 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B465E817217593F300C4B217 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B465E81B217593F400C4B217 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B465E81C217593F400C4B217 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B465E837217593F400C4B217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B465E838217593F400C4B217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B465E83A217593F400C4B217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7862DFA46FEC400C5A181C /* Pods-YNPickerViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56T97Z29X;
+				INFOPLIST_FILE = YNPickerViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyang.YNPickerViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B465E83B217593F400C4B217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22B4DD2C3FE4E031DECFC1B /* Pods-YNPickerViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56T97Z29X;
+				INFOPLIST_FILE = YNPickerViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyang.YNPickerViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B465E83D217593F400C4B217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56T97Z29X;
+				INFOPLIST_FILE = YNPickerViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyang.YNPickerViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YNPickerViewDemo.app/YNPickerViewDemo";
+			};
+			name = Debug;
+		};
+		B465E83E217593F400C4B217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56T97Z29X;
+				INFOPLIST_FILE = YNPickerViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyang.YNPickerViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YNPickerViewDemo.app/YNPickerViewDemo";
+			};
+			name = Release;
+		};
+		B465E840217593F400C4B217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56T97Z29X;
+				INFOPLIST_FILE = YNPickerViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyang.YNPickerViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YNPickerViewDemo;
+			};
+			name = Debug;
+		};
+		B465E841217593F400C4B217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D56T97Z29X;
+				INFOPLIST_FILE = YNPickerViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyang.YNPickerViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YNPickerViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B465E808217593F300C4B217 /* Build configuration list for PBXProject "YNPickerViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B465E837217593F400C4B217 /* Debug */,
+				B465E838217593F400C4B217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B465E839217593F400C4B217 /* Build configuration list for PBXNativeTarget "YNPickerViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B465E83A217593F400C4B217 /* Debug */,
+				B465E83B217593F400C4B217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B465E83C217593F400C4B217 /* Build configuration list for PBXNativeTarget "YNPickerViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B465E83D217593F400C4B217 /* Debug */,
+				B465E83E217593F400C4B217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B465E83F217593F400C4B217 /* Build configuration list for PBXNativeTarget "YNPickerViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B465E840217593F400C4B217 /* Debug */,
+				B465E841217593F400C4B217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B465E805217593F300C4B217 /* Project object */;
+}
