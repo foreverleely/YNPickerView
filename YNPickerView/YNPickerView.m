@@ -1,12 +1,12 @@
 //
-//  YNBottomPickerView.m
+//  YNPickerView.m
 //  
 //
 //  Created by liyangly on 2018/10/12.
 //  Copyright © 2018 makeupopular.com. All rights reserved.
 //
 
-#import "YNBottomPickerView.h"
+#import "YNPickerView.h"
 // pod
 #import "Masonry.h"
 
@@ -18,7 +18,7 @@
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #endif
 
-@interface YNBottomPickerView()<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface YNPickerView()<UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) UIButton *cancelBtn;
@@ -29,7 +29,7 @@
 
 @end
 
-@implementation YNBottomPickerView
+@implementation YNPickerView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -37,6 +37,7 @@
     if (self) {
         
         self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.4];
+        self.viewType = YNPickerViewTypeBottom;
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hidePicker)];
         [self addGestureRecognizer:tap];
@@ -54,8 +55,9 @@
     
     [self addSubview:self.containerView];
     [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.mas_equalTo(self);
-        make.height.mas_equalTo(198);
+        make.centerX.bottom.mas_equalTo(self);
+        make.width.mas_equalTo(SCREEN_WIDTH);
+        make.height.mas_equalTo(190);
     }];
     
     [self.containerView addSubview:self.cancelBtn];
@@ -137,6 +139,7 @@
 ////    }
 //
 //    UILabel *label = [UILabel new];
+//
 //    label.textAlignment = NSTextAlignmentCenter;
 //    label.text = self.dataList[component][row];
 //    label.font = [UIFont systemFontOfSize:23.0];
@@ -153,6 +156,17 @@
 - (void)setDataList:(NSArray *)dataList {
     _dataList = dataList;
     [self.pickerView reloadAllComponents];
+}
+
+- (void)setViewType:(YNPickerViewType)viewType {
+    _viewType = viewType;
+    if (viewType == YNPickerViewTypeCenter) {
+        [self.containerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(self);
+            make.width.mas_equalTo(SCREEN_WIDTH);
+            make.height.mas_equalTo(198);
+        }];
+    }
 }
 
 - (void)setPickViewTitle:(NSString *)pickViewTitle {

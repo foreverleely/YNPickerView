@@ -10,7 +10,7 @@
 // vc
 #import "NextViewController.h"
 //
-#import "YNBottomPickerView.h"
+#import "YNPickerView.h"
 // pod
 #import "Masonry.h"
 

@@ -8,7 +8,7 @@
 
 #import "NextViewController.h"
 //
-#import "YNBottomPickerView.h"
+#import "YNPickerView.h"
 // pod
 #import "Masonry.h"
 
@@ -24,7 +24,7 @@
 
 @property (nonatomic, strong) UIButton *openBtn;
 
-@property (nonatomic, strong) YNBottomPickerView *pickerView;
+@property (nonatomic, strong) YNPickerView *pickerView;
 
 @end
 
@@ -53,6 +53,12 @@
 #pragma mark - UIControl Actions
 - (void)openPickerView {
     
+//    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+//    [window addSubview:self.pickerView];
+//    [self.pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.bottom.mas_equalTo(window);
+//        make.height.mas_equalTo(190);
+//    }];
     [[[UIApplication sharedApplication] keyWindow] addSubview:self.pickerView];
     self.pickerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 }
@@ -68,29 +74,30 @@
     return _openBtn;
 }
 
-- (YNBottomPickerView *)pickerView {
+- (YNPickerView *)pickerView {
     if (!_pickerView) {
-        _pickerView = [[YNBottomPickerView alloc] init];
+        _pickerView = [[YNPickerView alloc] init];
         _pickerView.dataList = @[
-                                 @[@"1",
-                                   @"2",
-                                   @"3",
-                                   @"4",
-                                   @"5",
-                                   @"6",
-                                   @"7",
-                                   @"8",
-                                   @"9"],
+                                 @[@"123",
+                                   @"234",
+                                   @"345",
+                                   @"456",
+                                   @"567",
+                                   @"678",
+                                   @"789",
+                                   @"890",
+                                   @"901"],
                                  
-                                 @[@"a",
-                                   @"b",
-                                   @"c",
-                                   @"d",
-                                   @"e",
-                                   @"f",
-                                   @"g",
-                                   @"h"]
+                                 @[@"abc",
+                                   @"bcd",
+                                   @"cde",
+                                   @"def",
+                                   @"efg",
+                                   @"fgh",
+                                   @"ghi",
+                                   @"hij"]
                                  ];
+//        _pickerView.viewType = YNPickerViewTypeCenter;
         _pickerView.doneAction = ^(NSString * _Nonnull result) {
             NSLog(@"%@", result);
         };

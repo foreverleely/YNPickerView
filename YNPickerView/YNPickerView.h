@@ -1,5 +1,5 @@
 //
-//  YNBottomPickerView.h
+//  YNPickerView.h
 //  
 //
 //  Created by liyangly on 2018/10/12.
@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, YNPickerViewType)
+{
+    YNPickerViewTypeCenter,
+    YNPickerViewTypeBottom,
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YNBottomPickerView : UIView
+@interface YNPickerView : UIView
 
+// [col][row]
 @property (nonatomic, strong) NSArray *dataList;
+
+@property (nonatomic, assign) YNPickerViewType viewType;
 
 @property (nonatomic, copy) void (^cancelAction)(void);
 
